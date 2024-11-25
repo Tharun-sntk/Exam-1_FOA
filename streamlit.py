@@ -3,13 +3,10 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-# GitHub raw CSV URL
-DATA_URL = 'clean_df.csv'
-
 @st.cache
 def load_data():
     """Fetch data from GitHub and cache it."""
-    return pd.read_csv(DATA_URL)
+    return pd.read_csv('clean_df.csv')
 
 # Main app
 def main():
